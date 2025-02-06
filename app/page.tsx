@@ -1,4 +1,4 @@
-// app/page.tsx
+/* eslint-disable react/no-unescaped-entities */
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,7 +11,6 @@ export const metadata: Metadata = {
       "Client Focused Care is launching soon. We are committed to providing exceptional, client-focused care services. Stay tuned for updates!",
     url: "https://clientfocusedcare.co.uk",
     siteName: "Client Focused Care",
-    
     type: "website",
   },
   twitter: {
@@ -33,11 +32,13 @@ export default function Home() {
         </p>
         {/* Optional: A placeholder image for visual appeal */}
         <div className="mb-8">
-          {/* <img
-            src="/images/care-agency-placeholder.jpg" // Place an image in the public/images folder or remove if not needed
-            alt="Care Agency"
-            className="mx-auto rounded-lg shadow-md"
-          /> */}
+          {/*
+            <img
+              src="/images/care-agency-placeholder.jpg" // Place an image in the public/images folder or remove if not needed
+              alt="Care Agency"
+              className="mx-auto rounded-lg shadow-md"
+            />
+          */}
         </div>
         <p className="text-sm text-blue-600">
           Stay tuned for updates and thank you for your patience!
