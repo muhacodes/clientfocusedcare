@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-r from-blue-50 to-blue-100 px-4 text-center">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-r from-gray-100 to-gray-400 px-4 text-center">
       <div className="max-w-xl">
         <h1 className="text-5xl font-extrabold text-blue-900 mb-6">
           Coming Soon
