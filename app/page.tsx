@@ -23,7 +23,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-r from-gray-100 to-gray-400 px-4 text-center">
       <div className="max-w-xl">
         <h1 className="text-5xl font-extrabold text-blue-900 mb-6">
-          Coming Soon
+          Testing Feature
         </h1>
         <p className="text-lg text-blue-700 mb-8">
           We are working hard to launch our new website. Client Focused Care is
