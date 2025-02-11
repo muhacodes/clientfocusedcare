@@ -1,5 +1,38 @@
-
 import { Metadata } from "next";
+import HomePage from "./components/headersection";
+import { faBook, faHome, faPlane } from "@fortawesome/free-solid-svg-icons";
+import { Inter } from "next/font/google";
+import { Poppins, Roboto, Lato, Playfair_Display } from "next/font/google";
+import SectionOne from "./components/sectionOne";
+import FontAwesomeIcon from "./components/FontAwesomeWrapper";
+import ClientFeedback from "./components/testimonials";
+import HomeCare from "./components/sectiontwo";
+import Section from "./components/sections";
+import Footer from "./components/Footer";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-poppins",
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["300", "500", "700"],
+  variable: "--font-roboto",
+});
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-lato",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-playfair",
+});
 
 export const metadata: Metadata = {
   title: "Client Focused Care",
@@ -18,35 +51,24 @@ export const metadata: Metadata = {
   },
 };
 
+const inter = Inter({ subsets: ["latin"], weight: ["400", "700"] });
 export default function Home() {
+  
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-r from-gray-100 to-gray-400 px-4 text-center">
-      <div className="max-w-xl">
-        <h1 className="text-5xl font-extrabold text-blue-900 mb-6">
-          Testing Feature
-        </h1>
-        <p className="text-lg text-blue-700 mb-8">
-          We are working hard to launch our new website. Client Focused Care is
-          dedicated to delivering exceptional care services with a personal
-          touch.
-        </p>
-        {/* Optional: A placeholder image for visual appeal */}
-        <div className="mb-8">
-          {/*
-            <img
-              src="/images/care-agency-placeholder.jpg" // Place an image in the public/images folder or remove if not needed
-              alt="Care Agency"
-              className="mx-auto rounded-lg shadow-md"
-            />
-          */}
-        </div>
-        <p className="text-sm text-blue-600">
-          Stay tuned for updates and thank you for your patience!
-        </p>
-      </div>
-      <footer className="absolute bottom-4 text-sm text-blue-600">
-        &copy; {new Date().getFullYear()} Client Focused Care. All rights reserved.
-      </footer>
-    </main>
+    // <HomeSectionPage />
+
+    <>
+      <main
+        className={`${poppins.variable} ${roboto.variable} ${lato.variable} ${playfair.variable}`}
+      >
+        <HomePage />
+        <HomeCare />
+        {/* <SectionOne /> */}
+        
+        <Section />
+        <ClientFeedback />
+        <Footer />
+      </main>
+    </>
   );
 }

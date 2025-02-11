@@ -11,6 +11,15 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        color1 : "#19263F",
+        color2: "#2E436B",
+        activeWhite: '#FDF9E0'
+      },
+      fontFamily: {
+        sans: ['var(--font-poppins)', 'sans-serif'],
+        roboto: ['var(--font-roboto)', 'sans-serif'],
+        lato: ['var(--font-lato)', 'sans-serif'],
+        playfair: ['var(--font-playfair)', 'serif'],
       },
     },
   },
