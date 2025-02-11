@@ -1,10 +1,9 @@
 import { Metadata } from "next";
 import HomePage from "./components/headersection";
-import { faBook, faHome, faPlane } from "@fortawesome/free-solid-svg-icons";
-import { Inter } from "next/font/google";
+
+// import { Inter } from "next/font/google";
 import { Poppins, Roboto, Lato, Playfair_Display } from "next/font/google";
-import SectionOne from "./components/sectionOne";
-import FontAwesomeIcon from "./components/FontAwesomeWrapper";
+
 import ClientFeedback from "./components/testimonials";
 import HomeCare from "./components/sectiontwo";
 import Section from "./components/sections";
@@ -51,9 +50,8 @@ export const metadata: Metadata = {
   },
 };
 
-const inter = Inter({ subsets: ["latin"], weight: ["400", "700"] });
+// const inter = Inter({ subsets: ["latin"], weight: ["400", "700"] });
 export default function Home() {
-  
   return (
     // <HomeSectionPage />
 
@@ -63,8 +61,8 @@ export default function Home() {
       >
         <HomePage />
         <HomeCare />
-        {/* <SectionOne /> */}
-        
+
+
         <Section />
         <ClientFeedback />
         <Footer />

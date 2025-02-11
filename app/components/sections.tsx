@@ -1,8 +1,8 @@
 import React from "react";
 
-type Props = {};
 
-function Section({}: Props) {
+
+function Section() {
   return (
     <section className="px-4 py-20 lg:py-40 bg-color1">
       <h2 className="text-3xl text-center text-activeWhite lg:text-5xl font-roboto">

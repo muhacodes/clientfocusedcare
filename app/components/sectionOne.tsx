@@ -2,13 +2,13 @@ import React from "react";
 import FontAwesomeIcon from "./FontAwesomeWrapper";
 import { faBook, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
 
-type Props = {};
 
-function SectionOne({}: Props) {
+
+function SectionOne() {
   return (
     <div className="w-full p-10 text-black bg-white md:p-20">
       <h2 className="my-10 font-sans text-2xl font-bold text-center md:text-4xl ">
-        Compassionate Care Tailored to Your <br></br> Loved One's Unique Need
+        Compassionate Care Tailored to Your <br></br> Loved One Unique Need
       </h2>
       <div className="flex flex-col gap-10 mx-auto md:flex-row max-w-7xl">
         <div className="flex flex-col items-center text-center">

@@ -59,7 +59,7 @@
 // export default Footer;
 import React from 'react';
 import Fontawesome from './FontAwesomeWrapper'
-import { faEnvelope, faLocationPin, faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faLocationPin } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons/faPhone';
 const Footer: React.FC = () => {
   return (

@@ -1,13 +1,9 @@
-import { faCheck, faTicket } from "@fortawesome/free-solid-svg-icons";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 export default function HomeCare() {
-  const features = [
-    "Excellent Protection",
-    "High Saving Potential",
-    "Maximum Time Savings",
-  ];
+  
 
   return (
     <section className="flex flex-col items-center w-full px-4 py-40 lg:px-20 md:flex-row md:space-x-20">
