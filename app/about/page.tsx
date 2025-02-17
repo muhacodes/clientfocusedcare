@@ -1,13 +1,10 @@
 import { Metadata } from "next";
-import {HomePage, HeroSection} from "./components/headersection";
 
 // import { Inter } from "next/font/google";
 import { Poppins, Roboto, Lato, Playfair_Display } from "next/font/google";
-
-import ClientFeedback from "./components/testimonials";
-import HomeCare from "./components/sectiontwo";
-import { Section, GETINTOUCH } from "./components/sections";
-import Footer from "./components/Footer";
+import { HomePage } from "../components/headersection";
+import Footer from "../components/Footer";
+import { HeroSection } from "./components/about-us-component";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -61,11 +58,6 @@ export default function Home() {
       >
         <HomePage />
         <HeroSection />
-        <HomeCare />
-
-        <GETINTOUCH />
-        <Section />
-        <ClientFeedback />
         <Footer />
       </main>
     </>

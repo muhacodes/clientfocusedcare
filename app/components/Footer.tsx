@@ -62,14 +62,16 @@ import Fontawesome from './FontAwesomeWrapper'
 import { faEnvelope, faLocationPin } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons/faPhone';
 const Footer: React.FC = () => {
+
   return (
-    <footer className="py-12 text-white bg-gray-900">
-      <div className="container px-4 mx-auto">
+    <footer className="relative py-12 text-white bg-gray-900">
+      {/* <div className="absolute inset-0 bg-black opacity-80"></div> */}
+      <div className="container relative z-10 px-4 mx-auto">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
           {/* Brand Section */}
           <div className="col-span-2 mb-8 md:mb-0">
-            <h2 className="mb-4 text-2xl font-bold">NURSEY</h2>
-            <p className="text-gray-400">
+            <h2 className="mb-4 text-2xl font-bold text-white">NURSEY</h2>
+            <p className="text-gray-200">
               Specialized form of healthcare service that brings the expertise of professional nurses.
             </p>
           </div>
@@ -78,11 +80,11 @@ const Footer: React.FC = () => {
           <div className="mb-8 md:mb-0">
             <h3 className="mb-4 text-lg font-semibold">Sitemap</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 transition-colors hover:text-white">Home</a></li>
-              <li><a href="#" className="text-gray-400 transition-colors hover:text-white">About</a></li>
-              <li><a href="#" className="text-gray-400 transition-colors hover:text-white">Services</a></li>
-              <li><a href="#" className="text-gray-400 transition-colors hover:text-white">Pricing</a></li>
-              <li><a href="#" className="text-gray-400 transition-colors hover:text-white">Blog</a></li>
+              <li><a href="#" className="text-gray-200 transition-colors hover:text-white">Home</a></li>
+              <li><a href="#" className="text-gray-200 transition-colors hover:text-white">About</a></li>
+              <li><a href="#" className="text-gray-200 transition-colors hover:text-white">Services</a></li>
+              <li><a href="#" className="text-gray-200 transition-colors hover:text-white">Pricing</a></li>
+              <li><a href="#" className="text-gray-200 transition-colors hover:text-white">Blog</a></li>
             </ul>
           </div>
 
@@ -90,11 +92,11 @@ const Footer: React.FC = () => {
           <div className="mb-8 md:mb-0">
             <h3 className="mb-4 text-lg font-semibold">Support</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 transition-colors hover:text-white">Terms & Conditions</a></li>
-              <li><a href="#" className="text-gray-400 transition-colors hover:text-white">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-400 transition-colors hover:text-white">FAQ</a></li>
-              <li><a href="#" className="text-gray-400 transition-colors hover:text-white">Support</a></li>
-              <li><a href="#" className="text-gray-400 transition-colors hover:text-white">Contact</a></li>
+              <li><a href="#" className="text-gray-200 transition-colors hover:text-white">Terms & Conditions</a></li>
+              <li><a href="#" className="text-gray-200 transition-colors hover:text-white">Privacy Policy</a></li>
+              <li><a href="#" className="text-gray-200 transition-colors hover:text-white">FAQ</a></li>
+              <li><a href="#" className="text-gray-200 transition-colors hover:text-white">Support</a></li>
+              <li><a href="#" className="text-gray-200 transition-colors hover:text-white">Contact</a></li>
             </ul>
           </div>
 

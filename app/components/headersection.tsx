@@ -1,23 +1,23 @@
 // pages/index.tsx
 "use client";
 import { useState } from "react";
-import type { NextPage } from "next";
 import Link from "next/link";
 import Image from "next/image";
 
-const HomePage: NextPage = () => {
+// const HomePage: NextPage = () => {
+export const HomePage = () => {
   // Controls the mobile drawer
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Navigation items
   const navLinks = [
-    { name: "Home Caresss", href: "#" },
-    { name: "About Us", href: "#" },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "about" },
     { name: "Link Three", href: "#" },
   ];
 
   return (
-    <div onClick={() => {alert('alert')}} className="flex flex-col min-h-screen">
+    <div className="flex flex-col ">
       {/* HEADER */}
       <header className="relative z-10 w-full bg-white">
         <div className="flex items-center justify-between px-4 py-4 mx-auto max-w-7xl md:px-6">
@@ -121,46 +121,46 @@ const HomePage: NextPage = () => {
           </div>
         </div>
       </header>
-
-      {/* HERO SECTION */}
-      <section className="relative flex-1 w-full text-white">
-        {/* Background Image */}
-        <div className="absolute inset-0 -z-10">
-          <Image
-            src="https://plus.unsplash.com/premium_photo-1663099986867-464ba02e934a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // <-- replace with your own image
-            alt="Hero background"
-            sizes="cover"
-            fill
-            className="object-fill object-center"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-        </div>
-
-        {/* Hero Content */}
-        <div className="px-4 py-16 mx-auto max-w-7xl md:px-6 md:py-28">
-          <div className="max-w-lg">
-            <h1 className="mb-4 text-3xl font-bold tracking-tight sm:text-5xl">
-              Compassionate Care for Your Loved Ones
-            </h1>
-            <p className="mb-8 text-gray-200 sm:text-lg">
-              At ClientFocusedCare, we prioritize the well-being of our elderly
-              clients and individuals with disabilities. Our dedicated team is
-              here to provide personalized support tailored to your unique
-              needs.
-            </p>
-            <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
-              <button className="px-6 py-2 font-medium text-black bg-white hover:bg-gray-200">
-                Learn More
-              </button>
-              <button className="px-6 py-2 font-medium text-white bg-black border border-white hover:bg-gray-900">
-                Button
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
 
-export default HomePage;
+export const HeroSection = () => {
+  return (
+    <section className="relative flex-1 w-full text-white">
+      {/* Background Image */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="https://plus.unsplash.com/premium_photo-1663091795078-99ab67a5d1e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // <-- replace with your own image
+          alt="Hero background"
+          sizes="cover"
+          fill
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      </div>
+
+      {/* Hero Content */}
+      <div className="px-4 py-16 mx-auto max-w-7xl md:px-6 md:py-28">
+        <div className="max-w-lg">
+          <h1 className="mb-4 text-3xl font-bold tracking-tight sm:text-5xl">
+            Compassionate Care for Your Loved Ones
+          </h1>
+          <p className="mb-8 text-gray-200 sm:text-lg">
+            At ClientFocusedCare, we prioritize the well-being of our elderly
+            clients and individuals with disabilities. Our dedicated team is
+            here to provide personalized support tailored to your unique needs.
+          </p>
+          <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+            <button className="px-6 py-2 font-medium text-black bg-white hover:bg-gray-200">
+              Learn More
+            </button>
+            <button className="px-6 py-2 font-medium text-white bg-black border border-white hover:bg-gray-900">
+              Button
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
